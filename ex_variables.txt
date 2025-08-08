@@ -1,0 +1,62 @@
+*** 
+1. Airflow UI에서 [Admin] -> [Variables] 메뉴로 이동합니다.
+2. [+] 버튼을 눌러 새로운 변수를 추가합니다.
+3. Key, Value를 아래 값을 넣습니다.
+***
+    //KEY     -   alert_email_recipients
+    //Value   -   data-ops@shinhanlife.com,dev-team@shinhanlife.com,data-team@shinhanlife.com
+
+    KEY     -   etl_chunk_size
+    Value   -   10000
+    
+    KEY     -   db_connect_retries
+    Value   -   4
+
+    KEY     -   db_connect_retry_delay
+    Value   -   15
+
+    KEY     -   etl_target_conn_id
+    Value   -   oracle_etl_target_db
+
+    KEY     -   mart_target_conn_id
+    Value   -   oracle_mart_creation_target_db
+
+    KEY     -   mart_sql_directory
+    Value   -   /opt/airflow/dags/sql/create_mart
+
+    KEY     -   etl_schedule
+    Value   -   0 5 * * *
+                ==> 기본값
+                0 2 * * 1-5
+                ==> 매주 월요일부터 금요일까지 새벽 2시에 실행
+
+    KEY     - etl_config
+    Value(JSON)
+        {
+            "tables": [
+                {
+                    "db_type": "oracle",
+                    "source_conn_id": "oracle_source_db",
+                    "source_table": "SOURCE_TABLE_1",
+                    "target_table": "TARGET_TABLE_1"
+                },
+                {
+                    "db_type": "mssql",
+                    "source_conn_id": "mssql_source_db",
+                    "source_table": "dbo.SOURCE_TABLE_2",
+                    "target_table": "TARGET_TABLE_2"
+                },
+                {
+                    "db_type": "mysql",
+                    "source_conn_id": "mysql_source_db",
+                    "source_table": "SOURCE_TABLE_3",
+                    "target_table": "TARGET_TABLE_3"
+                },
+                {
+                    "db_type": "postgres",
+                    "source_conn_id": "postgres_source_db",
+                    "source_table": "public.source_table_4",
+                    "target_table": "TARGET_TABLE_4"
+                }
+            ]
+        }

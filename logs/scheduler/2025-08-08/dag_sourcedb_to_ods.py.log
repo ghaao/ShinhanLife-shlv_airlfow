@@ -1,0 +1,14 @@
+[2025-08-08T07:03:36.524+0000] {processor.py:186} INFO - Started process (PID=1176) to work on /opt/airflow/dags/dag_sourcedb_to_ods.py
+[2025-08-08T07:03:36.525+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_sourcedb_to_ods.py for tasks to queue
+[2025-08-08T07:03:36.526+0000] {logging_mixin.py:190} INFO - [2025-08-08T07:03:36.526+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_sourcedb_to_ods.py
+[2025-08-08T07:03:36.946+0000] {processor.py:925} INFO - DAG(s) 'DAG_SOURCEDB_TO_EDW' retrieved from /opt/airflow/dags/dag_sourcedb_to_ods.py
+[2025-08-08T07:03:36.960+0000] {logging_mixin.py:190} INFO - [2025-08-08T07:03:36.959+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-08-08T07:03:36.979+0000] {logging_mixin.py:190} INFO - [2025-08-08T07:03:36.978+0000] {dag.py:4180} INFO - Setting next_dagrun for DAG_SOURCEDB_TO_EDW to None, run_after=None
+[2025-08-08T07:03:37.001+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_sourcedb_to_ods.py took 482.427 seconds
+[2025-08-08T07:04:07.103+0000] {processor.py:186} INFO - Started process (PID=1186) to work on /opt/airflow/dags/dag_sourcedb_to_ods.py
+[2025-08-08T07:04:07.104+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_sourcedb_to_ods.py for tasks to queue
+[2025-08-08T07:04:07.105+0000] {logging_mixin.py:190} INFO - [2025-08-08T07:04:07.105+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_sourcedb_to_ods.py
+[2025-08-08T07:04:07.743+0000] {processor.py:925} INFO - DAG(s) 'DAG_SOURCEDB_TO_EDW' retrieved from /opt/airflow/dags/dag_sourcedb_to_ods.py
+[2025-08-08T07:04:07.762+0000] {logging_mixin.py:190} INFO - [2025-08-08T07:04:07.762+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-08-08T07:04:07.779+0000] {logging_mixin.py:190} INFO - [2025-08-08T07:04:07.779+0000] {dag.py:4180} INFO - Setting next_dagrun for DAG_SOURCEDB_TO_EDW to None, run_after=None
+[2025-08-08T07:04:07.809+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_sourcedb_to_ods.py took 711.469 seconds

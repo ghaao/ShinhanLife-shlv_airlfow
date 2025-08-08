@@ -1,0 +1,48 @@
+Source DBs
+    Oracle:
+        Connection Id: oracle_sourceDB
+        Connection Type: Oracle
+        Host: (Source Oracle IP/Hostname)
+        Schema: (Source Schema)
+        Login: (User ID)
+        Password: (Password)
+        Port: (Port, e.g., 1521)
+        SID or Service Name: (SID or Service Name)
+    MS SQL:
+        Connection Id: mssql_source_db
+        Connection Type: MS SQL
+        Host: (Source MS SQL IP/Hostname)
+        Schema: (Database Name)
+        Login: (User ID)
+        Password: (Password)
+        Port: (Port, e.g., 1433)
+    MySQL / MariaDB:
+        Connection Id: mysql_source_db
+        Connection Type: MySQL
+        Host: (Source MySQL/MariaDB IP/Hostname)
+        Schema: (Database Name)
+        Login: (User ID)
+        Password: (Password)
+        Port: (Port, e.g., 3306)
+
+Target DB
+    Oracle:
+        Connection Id: oracle_etl_target_db
+        Connection Type: Oracle
+        Host: (Target Oracle IP/Hostname)
+        Schema: (Target Schema)
+        Login: (User ID)
+        Password: (Password)
+        Port: (Port, e.g., 1521)
+        SID or Service Name: (SID or Service Name)
+
+Mart DB
+    Oracle:
+        Connection Id: oracle_mart_creation_target_db
+        Connection Type: Oracle
+        Host: (Target Oracle IP/Hostname)
+        Schema: (Target Schema)
+        Login: (User ID)
+        Password: (Password)
+        Port: (Port, e.g., 1521)
+        SID or Service Name: (SID or Service Name)
